@@ -1,0 +1,176 @@
+/* @override http://davidkrandall.com/BID_Template/style.css */
+
+body {
+	font-family: Verdana, "Trebuchet MS", Courier;
+	font-size: 11px;
+	background: #F2F2F3;
+}
+
+.header {
+	width: 900px;
+	margin-left: 26px;
+	margin-right: auto;
+	padding-top: 33px;
+	font-size: 13px;
+	padding-bottom: 16px;
+	background-color: #F2F2F3;
+}
+
+.home_links {
+	width: 246px;
+	float: left;
+	overflow: hidden;
+	color: #666;
+}
+
+.section_links {
+	font-size: 11pt;
+}
+
+.section_links a {
+	background: url(images/vbar_nav.gif) no-repeat;
+	padding-left: 5px;
+	margin-right: 64px;
+}
+
+.content_area {
+	width: 1000px;
+	margin-left: 0px;
+	margin-right: auto;
+}
+
+img {
+	max-width: 630px;
+}
+
+.left_column {
+	width: 226px;
+	float: left;
+	background: url(images/smalllogo.png) no-repeat center 15px;
+	padding-top: 90px;
+	text-align: left;
+	padding-left: 25px;
+	padding-right: 20px;
+	height: 100%;
+}
+
+.main_column {
+	width: 670px;
+	height: 100%;
+	float: left;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 30px;
+	margin-bottom: 25px;
+	background: #FFF;
+	border-style: solid;
+	border-color: #b4b4b4;
+	border-width: thin;
+	min-height: 200px;
+	box-shadow: -5px 4px 8px #ddd;
+}
+
+#selected_mainpage {
+	color: #666;
+}
+
+#selected_subpage {
+	color: #666;
+	font-weight: bold;
+}
+
+.title {
+	background-color: #d3d3d3;
+	font-size: 44px;
+	padding-left: 20px;
+	padding-top: 35px;
+	height: 65px;
+}
+
+.details {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.right_column {
+	width: 100px;
+	height: 100%;
+	float: left;
+}
+
+.subtitle {
+	font-size: 20pt;
+	margin: 12px 0 0;
+}
+
+.section_title {
+	color: #ef8116;
+	font-size: 11pt;
+	font-weight: bold;
+}
+
+.subpage_link {
+	font-size: 11pt;
+	padding-bottom: 6px;
+}
+
+.page_number {
+	color: #666;
+}
+
+.text_subtitle {
+	font-weight: bold;
+	font-size: 10pt;
+	color: black;
+}
+
+.credits {
+	color: #808080;
+	font-size: 8pt;
+}
+
+.iphone {
+	height: 480px;
+	width: 320px;
+	padding: 118px 24px;
+	margin-right: auto;
+	margin-top: 25px;
+	margin-left: auto;
+	background: url(images/frame.png) no-repeat;
+}
+
+.statusbar {
+	width: 320px;
+	height: 0px;
+	z-index: 2;
+	position: absolute;
+	display: block;
+	background-image: url(images/iphonebar.png);
+}
+
+.bottom_bar {
+	background: #F2F2F3;
+	height: 20px;
+	width: 100%;
+	clear: both;
+}
+
+.second_bottom_bar {
+	background: #F2F2F3;
+	height: 0px;
+	width: 100%;
+	clear: both;
+}
+
+.footer {
+	padding-left: 272px;
+	background: #F2F2F3;
+	color: #666;
+	font-size: 11px;
+}
+
+a:link  { color: #ef8116; text-decoration: none }
+a:visited { color: #ef8116; text-decoration: none }
+a:active { color: #ef8116; text-decoration: none }
+a:hover { color: #666; text-decoration: none }

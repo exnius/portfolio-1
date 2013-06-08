@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="Author" content="Eric Dudiak" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="apple-touch-icon" href="includes/icon.png" />
+<title>Incomer Careers</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<script src="jquery-1.5.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+function init() {
+   //Check if site is in fullscreen mode or still with browser menus
+   if ($(window).height() >= 480) {
+	   //load the content
+	   $.get("includes/functions.php", function(data){
+    		$(".main_column").append(data);
+			//hide all screens
+			$('.main_column div').hide();
+			
+			//show first screen
+			$('#index').show();
+			
+			//If in regular browser, show iPhone.png and topbar (see CSS how this is positioned)  
+			if ($(window).height() >= 481) {
+				$.get("includes/additional.css", function(data){
+					//$(".main_column").append(data);
+					$(".main_column").append("<span id=\"iphone\"></span>");
+					$(".main_column").append("<span id=\"iphonebar\"></span>");
+					//$('.main_column div').hide();
+					//$('#index').show();
+					});
+			//else switch to the standalone version
+			} else {
+				window.location = "http://www.davidkrandall.com/iprototype/";
+			}
+			//Give the href attributes an onclick trigger and make them show the right container
+				$("area").click(function(){	
+					$divid = $(this).attr('href');					
+					$('.main_column div').hide();
+					$('#'+$divid).show();	
+					return false;
+				});
+		});
+	 } else {
+	// move to the standalone version
+		window.location = "http://www.davidkrandall.com/iprototype/";
+	}
+	//All done? Let the show begin!
+	$('body').show();
+}
+
+// Run init on document load.
+$(document).ready(init);
+</script>
+</head>
+<body style="display: none;">
+<div class="header"><span class="home_links"><a href="http://www.paulos.net/teaching/2011/BID/">BID.2011</a> - <a href="index.html">Project 2</a></span><span class="section_links"><a href="research.html">Research</a><a href="synthesis.html">Synthesis</a><a href="design.html">Design</a><a href="solution.html" id="selected_mainpage">Solution</a></span></div>
+<div class="content_area">
+<div class="left_column">
+
+</div>
+<div class="main_column">
+<br />
+Check out the <a href="http://www.davidkrandall.com/iprototype/">clickable prototype here</a>
+</div>
+<div class="right_column">
+
+</div>
+<div class="bottom_bar">
+
+</div>
+<div class="second_bottom_bar">
+
+</div>
+<div class="footer">BID 2011 . Human-Computer Interaction Institute . Carnegie Mellon University</div>
+</body>
+</html>
